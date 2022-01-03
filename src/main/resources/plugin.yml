@@ -1,0 +1,4 @@
+name: NumberWriter
+version: '${project.version}'
+main: me.minicore.numberwriter.NumberWriter
+api-version: 1.17
