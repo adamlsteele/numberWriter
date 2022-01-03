@@ -21,14 +21,11 @@ public final class NumberWriter extends JavaPlugin {
                 int playerCount = Bukkit.getOnlinePlayers().size();
                 Boolean[][] blocks = numbers.getArray(playerCount);
 
-                Bukkit.broadcastMessage("Player count: " + playerCount);
-
-                for(int z = 2; z >= 0; z--) {
-                    for(int y = 4; y >= 0; y--) {
+                for (int z = 2; z >= 0; z--) {
+                    for (int y = 4; y >= 0; y--) {
                         Location location = new Location(Bukkit.getWorld("world"), -98, 25, -19);
-                       location.add(0,(- y),(- z));
-                         if(blocks[y][z]) {
-                            Bukkit.broadcastMessage("true");
+                        location.add(0, (-y), (-z));
+                        if (blocks[y][z]) {
                             Bukkit.getWorld("world").getBlockAt(location).setType(Material.GREEN_CONCRETE);
                         } else {
                             Bukkit.getWorld("world").getBlockAt(location).setType(Material.BLACK_CONCRETE);
