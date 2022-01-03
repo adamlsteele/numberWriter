@@ -25,7 +25,7 @@ public final class NumberWriter extends JavaPlugin {
 
                 for(int z = 2; z >= 0; z--) {
                     for(int y = 4; y >= 0; y--) {
-                        Location location = new Location(Bukkit.getWorld("world"), -98, 25, -11);
+                        Location location = new Location(Bukkit.getWorld("world"), -98, 25, -19);
                        location.add(0,(- y),(- z));
                          if(blocks[y][z]) {
                             Bukkit.broadcastMessage("true");
